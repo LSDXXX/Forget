@@ -35,6 +35,9 @@ linux:
 		系统自带pdf查看evince
 git:
 --->
+	拉去远程仓库:
+		git pull [远程主机名] [远程分之][本机分支]
+--->
 	删除一个分支:
 		git branch -d [分支名字]
 		时候要合并到master
