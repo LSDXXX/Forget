@@ -58,3 +58,6 @@ git:
 		ssh-keygen -t rsa -C "邮箱"
 network:
 c++:
+--->
+	singleton:
+		no copy no assign
