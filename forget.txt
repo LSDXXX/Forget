@@ -1,0 +1,60 @@
+begin:
+git:
+--->
+	删除一个分支:
+		git branch -d [分支名字]
+		时候要合并到master
+--->
+	合并分支到master:
+		git merge合并的分支]
+--->
+	列出所有分支:
+		git branch
+		当前面
+--->
+	增加一个分支:
+		1.git checkout -b [分支名字]
+		2.git branch [分支名字]
+		git checkout [分支名字]
+--->
+	克隆一个git仓库:
+		git clone git@github.com/[github账户明]/[.git配置文件]
+--->
+	的内容推送到github:
+		git push -u [连接的名] master/[分支名字]
+		第一次push的时候加-u参数以后不需要
+--->
+	增加一的远程连接:
+		git remote add [名称] git@github.com:[github名字]/[.git文]
+--->
+	删除:
+		git rm filename
+--->
+	git放弃工作仓修改:
+		git checkout -- filename
+--->
+	git查与版本中最新的差别:
+		git diff HEAD -- filename
+		--必须要有
+--->
+	git查看状态:
+		git status
+--->
+	git回退:
+		git reset --hard HEAD^
+		^代表回退的节点个数，可以写成HEA~100
+		HEAD可以替换为版本hao
+--->
+	git记录:
+		git log
+--->
+	git确认:
+		git commit -m "增加提示"
+--->
+	git文件:
+		git add filename
+--->
+	创建ssh:
+		ssh-keygen -t rsa -C "邮箱"
+network:
+c++:
