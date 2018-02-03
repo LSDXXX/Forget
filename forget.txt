@@ -1,6 +1,40 @@
 begin:
 vim:
 --->
+	折叠代码:
+		zf 	一个代码折叠
+		za	切折叠的状态
+		zc    关闭一个折叠
+		zd	删除一个折叠
+		zo	打开折叠
+		zj	移动折叠到下一个开始的地方,k到上一个
+--->
+	多窗口编辑:
+		vim -on [file...] 同时打开n个文件
+		:split [file] 水平分屏打开文件 vsplit 垂直打开文件
+		ctrl ww          各个窗口中切换
+		ctrl wj	 	 切换到下面的窗 k切换到上面窗口
+		tabnew [fil  打开文件分页打开
+		tabclose	关闭当前分页
+		tabonly		关闭其他分页
+		ctrl+pageup     切换分页
+--->
+	使用命令行处理文本:
+		命前面加上!    对vim中的文本可以用如1，4![command]的形式操作
+		!)  命令处理一个句子
+		!命令前加上r会将的内容放入文本中
+--->
+	对一处做标记:
+		mx    标记位置,x可以字(mark)
+		'x    返回光标所在位置处
+--->
+	打开vim的选项:
+		vi +n[file]   在第n行打开file
+		vi + [file]   在最后一行打开file
+		vi +/pattern file 以patte匹配的位置打开
+		vi -R file     以只读模式打开
+		vi -r        恢复缓冲区内的文件
+--->
 	命令模移动光标:
 		n 一次移动n个letter
 		0   移动到一行的开头
