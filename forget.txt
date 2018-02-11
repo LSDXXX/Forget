@@ -70,7 +70,7 @@ linux:
 git:
 --->
 	拉去远程仓库:
-		git pull [远程主机名] [远程分之][本机分支]
+		git pull [远程主机名] [远程分之]:[本机分支]
 --->
 	删除一个分支:
 		git branch -d [分支名字]
@@ -92,7 +92,7 @@ git:
 		git clone git@github.com/[github账户明]/[.git配置文件]
 --->
 	的内容推送到github:
-		git push -u [连接的名] master/[分支名字]
+		git push -u [连接的名] master:[分支名字]
 		第一次push的时候加-u参数以后不需要
 --->
 	增加一的远程连接:
