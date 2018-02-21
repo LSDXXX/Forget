@@ -1,4 +1,13 @@
 begin:
+unix:
+--->
+|	pipe:
+|		(int fd[2])
+|		fd[0]读fd[1]写
+--->
+|	open函数:
+|		在头文件<fcntl.h>中
+|		(path，int flags,...）
 vim:
 --->
 	折叠代码:
@@ -65,6 +74,39 @@ vim:
 		命令模式下cw(change word)
 linux:
 --->
+|	du:
+|		显示指定目信息
+--->
+|	split:
+|		切割文件-
+|		l设每多少行切割成一个文件
+--->
+|	od:
+|		读取二进制文件显示
+--->
+|	ar:
+|		.o生.a文件
+--->
+|	join:
+|		将两个文件指定位内容相同的连接起来
+--->
+|	colrm:
+|		列号开][列结束]开始到解释的所有列
+--->
+|	finger命令:
+|		列出账户信息
+|		finge [-lmsp][账户名称]
+--->
+|	shell:
+|		ctrl+u删除整个命令向前删除
+|		ctrl+k向后删除
+|		ctrl+a光标移至行首
+|		ctrl+e光标至行
+|		ctrl搜索历史记录
+--->
+|	cut命令:
+|		-d 与-f同时用，-d后面设置分割符，-f后面设置第几列
+--->
 	pdf查看器:
 		系统自带pdf查看evince
 git:
@@ -128,6 +170,14 @@ git:
 	创建ssh:
 		ssh-keygen -t rsa -C "邮箱"
 network:
+--->
+|	TCP标志位:
+|		URG 发送时候加急
+|		PSH 接受送给应用程序加急
+|		SYN 请求回话
+|		RST 遇到严重错误需要重新回话
+|		FIN 要释放连接
+|		ACK 获得
 c++:
 --->
 	singleton:
